@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+.parent-style{
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skew30deg-style{
+    /* margin: 30px 10px; */
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    animation: skew30-animation 3s infinite;
+    animation-delay: 0s;
+}
+.skew60deg-style{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(27, 16, 75);
+    animation: skew60-animation 3s infinite;
+    animation-delay: 0s;
+}
+.rotate-style{
+    width: 100px;
+    height: 100px;
+    background-color: #F2DDC1;
+    animation: rotate-animation 1s infinite;
+    animation-delay: 0s;
+}
+.scaley-style{
+    width: 100px;
+    height: 100px;
+    background-color: #98BAE7;
+    animation: scaley-animation 3s infinite;
+    animation-delay: 0s;
+}
+.scalex-style{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: scalex-animation 3s infinite;
+    animation-delay: 0s;
+}
+.rotate90-style{
+    width: 100px;
+    height: 100px;
+    background-color: #C37B89;
+    animation: rotate90-animation 2s infinite;
+    animation-delay: 1s;
+}
+a:visited{
+    color: #916BBF;
+}
+a:hover{
+    color: #77D970;
+}
+.parent1-style{
+    margin-top: 50px;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.scale2x-style{
+    width: 100px;
+    height: 100px;
+    background-color: #39A388;
+    transition: width 2s ease-in;
+}
+.scale2x-style:hover{
+    width: 400px;
+}
+.scalexy-style{
+    width: 100px;
+    height: 100px;
+    background-color: #39A388;
+    transition: width 2s ease-in,height 2s ease-in;
+}
+.scalexy-style:hover{
+    width: 300px;
+    height: 300px;
+}
+.inc-width-style{
+    width: 100px;
+    height: 100px;
+    background-color: #39A388;
+    transition: width 2s ease-in-out;
+}
+.inc-width-style:hover{
+    width: 300px;
+}
+.inc-width1-style{
+    width: 100px;
+    height: 100px;
+    background-color: #39A388;
+    transition: width 2s ease-out;
+}
+.inc-width1-style:hover{
+    width: 300px;
+}
+.inc-width2-style{
+    width: 100px;
+    height: 100px;
+    background-color: #39A388;
+    transition: width 2s linear;
+}
+.inc-width2-style:hover{
+    width: 300px;
+}
+.inc-width3-style{
+    width: 100px;
+    height: 100px;
+    background-color: #39A388;
+    transition: width 2s ease;
+}
+.inc-width3-style:hover{
+    width: 300px;
+}
+.inc-width4-style{
+    width: 100px;
+    height: 100px;
+    background-color: #39A388;
+    transition: width 2s cubic-bezier(.52,.16,1,.4);
+}
+.inc-width4-style:hover{
+    width: 300px;
+}
+@keyframes skew30-animation {
+    0%{
+        transform: skewx(-30deg); 
+    }
+    50%{
+        transform: skewx(30deg);
+    }
+    100%{
+        transform: skewx(-30deg);
+    }
+}
+@keyframes skew60-animation {
+    0%{
+        transform: skewy(-20deg); 
+    }
+    50%{
+        transform: skewy(20deg);
+    }
+    100%{
+        transform: skewy(-20deg);
+    }
+}
+@keyframes rotate-animation {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes scaley-animation {
+    50%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+@keyframes scalex-animation {
+    50%{
+        transform: scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+@keyframes rotate90-animation {
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
