@@ -84,8 +84,9 @@ span:nth-child(3){
 }
 .sun{
     position: fixed;
-    top: 100px;
-    right: 150px;
+    top: 5%;
+    right: 10%;
+    animation: sun 5s linear infinite;
 }
 @keyframes highway{
     100%{
@@ -109,6 +110,11 @@ span:nth-child(3){
     }
 }
 @keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes sun{
     100%{
         transform: rotate(360deg);
     }
